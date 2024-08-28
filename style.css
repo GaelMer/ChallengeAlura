@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*1 rem = 16px*/
+
+:root
+{
+    --colorPrimario: #0A3871;
+    --colorFondo: #FFFFFF;
+    --colorHover1: #072B61;
+    --colorHover2: #D8DFE8;
+    --colorAlerta: #495057;
+    --colorBotonDes: #E5E5E5;
+
+    --fuente: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-color: var(--colorFondo);
+}
+
+.header
+{
+    padding: 2% 0% 0% 15%;
+}
+
+.pagina
+{
+    display: flex;
+    align-items: flex-start;
+    padding: 5%;
+    justify-content:flex-start;
+    flex-direction: row;
+    gap: 180px;
+}
+
+.textareaEntrada
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: left;
+}
+
+.entrada-texto
+{
+}
+
+.textoIn
+{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.alerta
+{
+    font-size: 0.75rem;
+    font-family: var(--fuente);
+    font-weight: 600;
+    color: var(--colorAlerta);
+}
+
+.botones-accion
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+.boton-encriptar
+{
+    width: 328px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: var(--fuente);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--colorFondo);
+    border: 2px solid var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--colorPrimario);
+}
+
+
+.boton-desencriptar
+{
+    width: 328px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: var(--fuente);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--colorPrimario);
+    border: 2px solid var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--colorBotonDes);
+}
+
+.boton-encriptar:hover
+{
+    background-color: var(--colorHover1);
+}
+
+.boton-desencriptar:hover
+{
+    background-color: var(--colorHover2);
+}
+
+.boton-copiar
+{
+    width: 328px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: var(--fuente);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--colorPrimario);
+    border: 2px solid var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--colorBotonDes);
+}
+
+.boton-copiar:hover
+{
+    background-color: var(--colorHover2);
+}
+
+.salida-texto
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: left;
+}

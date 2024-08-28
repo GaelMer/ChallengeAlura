@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Enriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img href="./index.html" src="./img/Logo.png">
+    </header>
+    <main class="pagina">
+        <section class="entrada-texto">
+            <div class="textareaEntrada">
+                <textarea name="textoIn" id="textoIn" rows="14" cols="30" placeholder="ingresa tu texto"></textarea>
+            </div>
+            <p class="alerta">Solo usar letras minusculas y sin acentos</p>
+            <div class="botones-accion">
+                <a href="" onclick="encriptar(); return false;" class="boton-encriptar" >Encriptar</a>
+                <a href="" onclick="desencriptar(); return false;" class="boton-desencriptar">Desencriptar</a>
+            </div>
+        </section>
+        <section class="salida-texto" style="position:relative;">
+            <div class="muneco" id="muneco" style="position:absolute; top:0; left:0;">
+                <img src="./img/Muñeco.png" alt="Imagen de un Muñeco">
+                <p class="sin-texto">Ningun mensaje fue encontrado</p>
+                <p class="sin-texto-instrucciones">Ingresa el texto que deseas encriptar o desencriptar</p>    
+            </div>
+            <div class="textoProcesado" id="textoProcesado" style="position:absolute; top:0; left:0;">
+                <textarea name="textoOut" id="textoOut" cols="30" rows="50"></textarea>
+                <a href="" onclick="copiar(); return false;" class="boton-copiar"  id="boton-copiar">Copiar</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
